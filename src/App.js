@@ -5,7 +5,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import TinderCards from "./TinderCards";
 import Header from "./Header";
-import SignUp from "./SignUp";
+import SignUpPage from "./SignUpPage";
 import { BrowserRouter as Router,Route,Link,Routes } from "react-router-dom";
 import ChatPage from "./ChatPage";
 
@@ -23,8 +23,11 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path ="/signup" element ={<SignUp/>}></Route>
-          <Route path="/chat" element={<ChatPage />}></Route>
+          {/*  <Route path ="signin" element ={SignIn/>}></Route> */ }
+          {/* <Route path ="profile" element ={Profile/>}></Route> */}
+          {/* {<Route path ="messages" element={<Messages/>}></Route>} */}
+          <Route path ="/signup" element ={<SignUpPage/>}></Route>
+          {/* <Route path="/chat" element={<ChatPage />}></Route> */}
           <Route path="/" element={<TinderCards animal={animals} />}></Route>
         </Routes>
       </Router>

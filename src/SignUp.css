@@ -1,0 +1,21 @@
+#signUpForm {
+    display: flex;
+    align-items:center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: purple;
+    width: 20vw;
+    border-radius: 20%;
+    color: white;
+}
+
+#submitButton{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#signUpContainer {
+    display: flex;
+    justify-content: center;
+}
