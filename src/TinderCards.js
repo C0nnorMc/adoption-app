@@ -4,13 +4,6 @@ import "./TinderCards.css";
 
 const TinderCards = ({animal}) => {
 
-//  const animal =[ { name: "Dio",
-//   url : "https://www.mypetzilla.co.uk/files/6114/7913/5836/English-Toy-Terrier.jpg",
-//  },
-//  {name: "Bill",
-//   url: "https://fishsubsidy.org/wp-content/uploads/2020/01/Italian-greyhound.jpg"
-// }]
-
   return (
     <div className="TinderCards_Container">
       {animal.map((animal) => (
